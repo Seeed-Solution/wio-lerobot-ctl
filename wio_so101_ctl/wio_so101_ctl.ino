@@ -1,10 +1,6 @@
-// Wio Terminal SO-101 remote — PC hub mode.
+// Wio Terminal SO-101 controller - PC hub mode.
 //
-// Wio USB -> Mac/PC bridge (tools/wio_pc_bridge) -> arm USB (feetech.js / 1Mbps)
-//
-// Flash this sketch when using the computer as hub. Run on Mac:
-//   cd tools/wio_pc_bridge && npm install
-//   node bridge.mjs --wio /dev/cu.usbmodemXXXX --arm /dev/cu.usbmodemYYYY
+// Wio USB -> Mac/PC bridge -> arm USB (feetech.js / 1Mbps)
 //
 // Controls:
 //   L/R move joint   A cycle joint   Press fine/coarse   B E-stop   C rescan
