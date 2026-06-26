@@ -255,9 +255,9 @@ void updateDisplay() {
 }
 
 void handleButtons() {
-  if (readSwitchPressed(WIO_KEY_A, lastKeyA)) sendInput("a", "press");
+  if (readSwitchPressed(WIO_KEY_A, lastKeyA)) sendInput("c", "press");
   if (readSwitchPressed(WIO_KEY_B, lastKeyB)) sendInput("b", "press");
-  if (readSwitchPressed(WIO_KEY_C, lastKeyC)) sendInput("c", "press");
+  if (readSwitchPressed(WIO_KEY_C, lastKeyC)) sendInput("a", "press");
   if (readSwitchPressed(WIO_5S_PRESS, lastJoyPress)) sendInput("press", "press");
   if (readSwitchPressed(WIO_5S_UP, lastJoyUp)) sendInput("up", "press");
   if (readSwitchPressed(WIO_5S_DOWN, lastJoyDown)) sendInput("down", "press");

@@ -59,7 +59,7 @@ The firmware also accepts:
 
 ## Controls
 
-- `A`: stop action for the current easy mode
+- `A`: switch easy mode
 - `B`: primary action for the current easy mode
-- `C`: switch easy mode
+- `C`: stop action for the current easy mode
 - joystick left/right/up/down: selection or jog input, interpreted by easy
