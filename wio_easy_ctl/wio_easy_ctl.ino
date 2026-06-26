@@ -18,7 +18,7 @@ char modeText[16] = "model";
 char primaryText[80] = "No model";
 char indexText[16] = "0/0";
 char statusText[80] = "Connect from easy";
-char footerText[48] = "A Stop  B Start  C Mode";
+char footerText[48] = "A Mode  B Start  C Stop";
 char rxBuffer[512];
 uint16_t rxLength = 0;
 unsigned long seq = 1;

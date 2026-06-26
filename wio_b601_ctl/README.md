@@ -20,21 +20,21 @@ Replace `/dev/tty.usbmodemXXXX` with the Wio Terminal port.
 
 ## Controls
 
-Use `C` to switch modes.
+Use `A` to switch modes.
 
 Model mode:
 
-- `A`: stop run
+- `A`: switch to replay mode
 - `B`: start local run
-- `C`: switch to replay mode
+- `C`: stop run
 - joystick left/up: previous model
 - joystick right/down: next model
 
 Replay mode:
 
-- `A`: stop active replay
+- `A`: switch to model mode
 - `B`: replay selected dataset episode `0`
-- `C`: switch to model mode
+- `C`: stop active replay
 - joystick left/up: previous dataset
 - joystick right/down: next dataset
 

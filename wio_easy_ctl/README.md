@@ -45,7 +45,7 @@ arduino-cli upload -p /dev/tty.usbmodemXXXX --fqbn Seeeduino:samd:seeed_wio_term
   "primary": "Pick Red Block",
   "index": "1/4",
   "status": "Ready",
-  "footer": "A Stop  B Start  C Mode",
+  "footer": "A Mode  B Start  C Stop",
   "connected": true
 }
 ```

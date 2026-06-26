@@ -445,9 +445,9 @@ void drawFooter() {
   tft.setTextSize(1);
   tft.setCursor(8, 222);
   if (screen == SCREEN_MODEL) {
-    tft.print("A Stop  B Start  C Dataset  Joy Select");
+    tft.print("A Dataset  B Start  C Stop  Joy Select");
   } else {
-    tft.print("A Stop  B Replay  C Models  Joy Select");
+    tft.print("A Models  B Replay  C Stop  Joy Select");
   }
 }
 
@@ -612,13 +612,13 @@ void updateDisplay() {
 void handleButtons() {
   if (screen == SCREEN_MODEL) {
     if (readSwitchPressed(WIO_KEY_A, lastKeyA)) {
-      stopRun();
+      switchScreen();
     }
     if (readSwitchPressed(WIO_KEY_B, lastKeyB)) {
       startRun();
     }
     if (readSwitchPressed(WIO_KEY_C, lastKeyC)) {
-      switchScreen();
+      stopRun();
     }
     if (readSwitchPressed(WIO_5S_UP, lastJoyUp)) selectPreviousModel();
     if (readSwitchPressed(WIO_5S_DOWN, lastJoyDown)) selectNextModel();
@@ -630,13 +630,13 @@ void handleButtons() {
     }
   } else {
     if (readSwitchPressed(WIO_KEY_A, lastKeyA)) {
-      stopReplay();
+      switchScreen();
     }
     if (readSwitchPressed(WIO_KEY_B, lastKeyB)) {
       startReplay();
     }
     if (readSwitchPressed(WIO_KEY_C, lastKeyC)) {
-      switchScreen();
+      stopReplay();
     }
     if (readSwitchPressed(WIO_5S_UP, lastJoyUp)) selectPreviousDataset();
     if (readSwitchPressed(WIO_5S_DOWN, lastJoyDown)) selectNextDataset();
